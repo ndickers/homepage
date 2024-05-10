@@ -184,7 +184,7 @@ small {
     justify-content: space-between;
   }
   .container {
-    max-inline-size: 1200px;
+    max-inline-size: 1000px;
     margin: auto;
   }
   h1 {
