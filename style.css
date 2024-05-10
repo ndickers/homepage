@@ -1,0 +1,247 @@
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish: hsl(236, 13%, 42%);
+  --very-dark: hsl(240, 100%, 5%);
+  --very-dark-transparent: hsla(240, 100%, 5%, 0.6);
+  font-size: 15px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--off-white);
+  padding: 1rem;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+header {
+  inline-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 1.5rem;
+}
+
+.mobile-img {
+  inline-size: 100%;
+  block-size: auto;
+}
+.desktop-img {
+  display: none;
+}
+h1 {
+  font-weight: 800;
+  color: var(--very-dark);
+  font-size: 2rem;
+  margin-block: 1rem;
+  line-height: 1;
+}
+.main-paragraph {
+  font-weight: 400;
+  color: var(--dark-grayish);
+  line-height: 1.7;
+}
+.read-more-btn {
+  background: var(--soft-red);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: block;
+  font-weight: bold;
+  inline-size: 13rem;
+  text-align: center;
+  letter-spacing: 2.2px;
+  color: var(--off-white);
+  margin-block: 1.3rem;
+}
+.read-more-btn:hover {
+  background: var(--very-dark);
+}
+aside {
+  background: var(--very-dark);
+  padding: 1.2rem;
+  margin-block: 1rem;
+}
+h2 {
+  color: var(--soft-orange);
+  font-weight: 700;
+}
+
+aside h3 {
+  color: var(--off-white);
+  margin-block-start: 1.6rem;
+}
+aside h3:hover {
+  color: var(--soft-orange);
+}
+aside p {
+  color: var(--grayish-blue);
+  font-size: smaller;
+  line-height: 1.8;
+  margin-block: 1rem;
+}
+.line-div {
+  background: var(--dark-grayish);
+  block-size: 1px;
+  inline-size: 100%;
+  border: none;
+  margin-block: 2rem;
+}
+footer article {
+  display: flex;
+  margin-block: 1ren;
+  gap: 1.5rem;
+  padding-block: 1rem;
+}
+footer img {
+  max-inline-size: 5.5rem;
+  block-size: auto;
+}
+footer p:nth-child(1) {
+  color: var(--grayish-blue);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+footer h4 {
+  color: var(--very-dark);
+  margin-block: 0.6rem;
+}
+footer h4:hover {
+  color: var(--soft-red);
+}
+.footer-text {
+  color: var(--dark-grayish);
+  line-height: 1.7;
+}
+
+/* state properties */
+
+.burger-icon {
+  background: inherit;
+  border: none;
+}
+.nav-bar {
+  display: none;
+  background: var(--very-dark-transparent);
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  left: 0;
+  top: 0;
+}
+.nav-items {
+  background: var(--off-white);
+  inline-size: 70%;
+  block-size: 100%;
+  margin-inline-start: auto;
+}
+ul {
+  list-style: none;
+  position: absolute;
+  top: 8%;
+  text-decoration: none;
+}
+li {
+  margin: 2rem 1.5rem;
+}
+li a {
+  text-decoration: none;
+  color: var(--dark-grayish);
+  font-weight: 500;
+  font-size: larger;
+}
+li a:hover {
+  color: var(--soft-red);
+}
+.close-button {
+  margin-block-start: 3rem;
+  border: none;
+  background: inherit;
+  position: absolute;
+  left: 85%;
+}
+/* end state css */
+
+/* responsiveness styling */
+
+@media screen and (min-width: 1000px) {
+  main {
+    inline-size: 65%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container {
+    max-inline-size: 1200px;
+    margin: auto;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  aside {
+    flex: 1;
+    margin-block-start: 0;
+  }
+  main article {
+    display: flex;
+    gap: 2rem;
+    margin-block: 1.3rem;
+  }
+  main article h1,
+  main article div {
+    flex: 1;
+  }
+  .flex-main-aside {
+    display: flex;
+    gap: 2rem;
+  }
+  .main-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header {
+    inline-size: 100%;
+  }
+  .nav-bar,
+  .nav-items,
+  ul,
+  li {
+    all: unset;
+  }
+  li {
+    margin-inline: 0.6rem;
+  }
+  .burger-icon,
+  .close-button {
+    display: none;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+    inline-size: 100%;
+    block-size: auto;
+  }
+  .read-more-btn {
+    margin-bottom: 0;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 2rem;
+  }
+  footer article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
