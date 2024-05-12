@@ -225,9 +225,10 @@ small {
   li {
     all: unset;
   }
-  .nav-bar {
+  .nav-remove {
     display: block;
   }
+
   li {
     margin-inline: 0.6rem;
   }
