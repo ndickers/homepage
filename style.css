@@ -126,8 +126,10 @@ footer h4:hover {
   background: inherit;
   border: none;
 }
-.nav-bar {
+.nav-remove{
   display: none;
+}
+.nav-bar {
   background: var(--very-dark-transparent);
   position: absolute;
   inline-size: 100%;
@@ -185,6 +187,7 @@ small {
   }
   .container {
     max-inline-size: 1000px;
+    block-size: 80%;
     margin: auto;
   }
   h1 {
@@ -221,6 +224,9 @@ small {
   ul,
   li {
     all: unset;
+  }
+  .nav-bar {
+    display: block;
   }
   li {
     margin-inline: 0.6rem;
