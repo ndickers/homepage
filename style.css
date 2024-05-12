@@ -19,6 +19,10 @@ body {
   font-family: "Inter", sans-serif;
   position: relative;
 }
+.container{
+  max-inline-size: 650px;
+  margin-inline: auto;
+}
 
 header {
   inline-size: 100%;
@@ -126,7 +130,7 @@ footer h4:hover {
   background: inherit;
   border: none;
 }
-.nav-remove{
+.nav-remove {
   display: none;
 }
 .nav-bar {
@@ -226,7 +230,7 @@ small {
     all: unset;
   }
   .nav-remove {
-    display: block;
+    all: unset;
   }
 
   li {
